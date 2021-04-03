@@ -1,0 +1,10 @@
+#
+# Don't commit…
+#
+
+# Custom files
+assets/
+
+# temp files
+*.swp
+.DS_Store
