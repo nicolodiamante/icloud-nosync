@@ -22,6 +22,6 @@ fi
 if [ -z "$CMD" ]; then
   echo 'No git, curl or wget available. Aborting!'
 else
-  echo 'Installing iCloud Sync Status...'
+  echo 'Installing iCloud No Sync...'
   mkdir -p "${TARGET}" && eval "${CMD}" && cd "${TARGET}" && source "${INSTALL}"
 fi
