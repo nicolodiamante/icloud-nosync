@@ -28,7 +28,7 @@ refer to the symlink to restart the sync).<br/><br/>
 Download the repository via curl:
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/master/bootstrap.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/main/bootstrap.sh)"
 ```
 
 Alternatively, clone manually:
@@ -60,14 +60,15 @@ Open System Preferences <a href="#"><img src="https://user-images.githubusercont
 
 <p align="center"><a href="#"><img src="https://user-images.githubusercontent.com/48920263/110946959-d5518580-833f-11eb-9eca-f7f8134e2cc9.png" draggable="false" ondragstart="return false;" alt="Quick Actions Menu" title="Quick Actions Menu" width="700px" /></a></p>
 
+## Notes
 ### Resources
 
 - [Apple Support][apple-guide]
 
 ### Contribution
 
-Please report any issues or bugs to the [issues page][issues]. Suggestions for improvements
-are welcome!<br/><br/>
+Please report any issues or bugs to the [issues page][issues]. Suggestions for
+improvements are welcome!<br/><br/>
 
 <p align="center"><a href="#"><img src="https://user-images.githubusercontent.com/48920263/113406768-5a164900-93ac-11eb-94a7-09377a52bf53.png" draggable="false" ondragstart="return false;" /></a></p>
 
