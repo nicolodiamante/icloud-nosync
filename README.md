@@ -28,7 +28,7 @@ refer to the symlink to restart the sync).<br/><br/>
 Download the repository via curl:
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/main/bootstrap.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/HEAD/bootstrap.sh)"
 ```
 
 Alternatively, clone manually:
