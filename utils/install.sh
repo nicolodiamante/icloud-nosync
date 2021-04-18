@@ -5,7 +5,7 @@
 #
 
 # Detects the Operating System.
-[[ "$OSTYPE" =~ ^darwin* ]] || exit 1
+[[ "$OSTYPE" = darwin* ]] || exit 1
 
 # Define the Services directory.
 APPLE_SERVICES="${HOME}/Library/Services"
