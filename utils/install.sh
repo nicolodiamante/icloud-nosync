@@ -14,8 +14,8 @@ APPLE_SERVICES="${HOME}/Library/Services"
 OS_VERS="$(sw_vers -buildVersion)"
 if [[ "$OS_VERS" > 16 ]]; then
   # Copies files into the Services directory.
-  cp -r ./scripts/iCloud\ No\ Sync.workflow "${APPLE_SERVICES}"
-  cp -r ./scripts/iCloud\ Sync.workflow "${APPLE_SERVICES}"
+  cp -r ../scripts/iCloud\ No\ Sync.workflow "${APPLE_SERVICES}"
+  cp -r ../scripts/iCloud\ Sync.workflow "${APPLE_SERVICES}"
   echo 'The workflow files have been copied into the Services directory.'
 else
   echo 'Looks like this Mac is running an earlier version of macOS. '
