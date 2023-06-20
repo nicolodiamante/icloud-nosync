@@ -11,8 +11,10 @@
 APPLE_SERVICES="${HOME}/Library/Services"
 
 # Detects which macOS version.
-OS_VERS="$(sw_vers -buildVersion)"
-if [[ "$OS_VERS" > 16 ]]; then
+SW_VERS=$(sw_vers -buildVersion)
+OS_VERS=$(sed -E -e 's/([0-9]{2}).*/\1/' <<< "$SW_VERS")
+
+if [[ "$OS_VERS" -ge 14 ]]; then
   # Copies files into the Services directory.
   cp -r ../scripts/iCloud\ No\ Sync.workflow "${APPLE_SERVICES}"
   cp -r ../scripts/iCloud\ Sync.workflow "${APPLE_SERVICES}"
