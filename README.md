@@ -22,31 +22,33 @@
 
 <br>
 
-**iCloud Sync:**  it first unhides the original file or folder. Then, it removes the symbolic link and the extension to restart the synchronisation. This means that iCloud Sync always refers to the symlink to restart the sync, which ensures that the latest version of the file or folder is synchronised across all your devices. By removing the symbolic link and the extension, iCloud Sync ensures that the sync is done from scratch, which reduces the chances of any errors or conflicts during the synchronisation process.<br><br>
+**iCloud Sync:** it first unhides the original file or folder. Then, it removes the symbolic link and the extension to restart the synchronisation. This means that iCloud Sync always refers to the symlink to restart the sync, which ensures that the latest version of the file or folder is synchronised across all your devices. By removing the symbolic link and the extension, iCloud Sync ensures that the sync is done from scratch, which reduces the chances of any errors or conflicts during the synchronisation process.<br><br>
 
 ## Getting Started
 
 ### Installation
 
-Download the repository via curl:
+The installation process for this utility is designed for ease and convenience. You have two options:
+
+**Automatic Installation via `curl`**: Simply execute the following command in your terminal to quickly download and seamlessly install the utility:
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/HEAD/bootstrap.sh)"
 ```
 
-Alternatively, you can clone the repository manually:
+**Manual Installation**: If you favor manual installation, first clone the repository to your local machine using `git`:
 
 ```shell
 git clone https://github.com/nicolodiamante/icloud-nosync.git
 ```
 
-Once you have downloaded the repository, you can navigate into its directory in the terminal and paste the following code:
+After cloning, navigate to the repository's directory in your terminal. From there, move to the `utils` subdirectory and execute the `install.sh` script:
 
 ```shell
-cd utils && source install.sh
+source install.sh
 ```
 
-The script will make a copy of the workflow files into `~/Library/Services`.
+This script will copy the workflow files to `~/Library/Services`.
 
 <br>
 
@@ -59,7 +61,7 @@ Open System Preferences <img src="https://github.com/nicolodiamante/icloud-nosyn
 
 ### How It Works
 
-1. Right-click to the file or folder you want to stop syncing to iCloud Drive.
+1. Right-click on the file or folder you want to stop syncing to iCloud Drive.
 2. Select `iCloud No Sync` from the `Quick Actions` menu to stop the sync.
 3. Select `iCloud Sync` from the `Quick Actions` menu to sync it again.
 
@@ -67,8 +69,8 @@ Open System Preferences <img src="https://github.com/nicolodiamante/icloud-nosyn
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/28852742-8a84-4221-a581-bda2d1439a6c" draggable="false" ondragstart="return false;" alt="Quick Actions Menu" title="Quick Actions Menu" />
-    <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/035e540c-a7f5-4959-a7f0-181a8ac13829" draggable="false" ondragstart="return false; "alt="Quick Actions Menu" title="Quick Actions Menu" width="560px" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/463b58e5-b7bc-4183-80d6-818b6464e23e" draggable="false" ondragstart="return false;" alt="Quick Actions Menu" title="Quick Actions Menu" />
+    <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/ebe5533b-43c7-406a-a8b5-c9f0a2411711" draggable="false" ondragstart="return false; "alt="Quick Actions Menu" title="Quick Actions Menu" width="560px" />
   </picture>
 </p>
 
@@ -105,6 +107,7 @@ Any suggestions or feedback you may have for improvement are welcome. If you enc
 </p>
 
 <!-- Link labels: -->
+
 [apple-icloud]: https://www.apple.com/icloud/
 [apple-guide]: https://support.apple.com/guide/mac-help/get-file-folder-and-disk-information-on-mac-mchlp1774/11.0/mac/11.0
 [issues]: https://github.com/nicolodiamante/icloud-nosync/issues
