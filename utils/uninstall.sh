@@ -1,11 +1,14 @@
-#!/bin/sh
+#!/bin/zsh
 
 #
-# Uninstall iCloud Sync Status.
+# Uninstall iCloud NoSync.
 #
 
 # Detects the Operating System.
-[[ "$OSTYPE" = darwin* ]] || exit 1
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "This script is only compatible with macOS" >&2
+  exit 1
+fi
 
 # Removes the files inside the Services directory.
 APPLE_SERVICES="${HOME}/Library/Services"

@@ -1,11 +1,14 @@
-#!/bin/sh
+#!/bin/zsh
 
 #
-# Install iCloud Sync Status.
+# Install iCloud NoSync.
 #
 
 # Detects the Operating System.
-[[ "$OSTYPE" = darwin* ]] || exit 1
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "This script is only compatible with macOS" >&2
+  exit 1
+fi
 
 # Define the Services directory.
 APPLE_SERVICES="${HOME}/Library/Services"
@@ -13,7 +16,6 @@ APPLE_SERVICES="${HOME}/Library/Services"
 # Detects which macOS version.
 SW_VERS=$(sw_vers -buildVersion)
 OS_VERS=$(sed -E -e 's/([0-9]{2}).*/\1/' <<< "$SW_VERS")
-
 if [[ "$OS_VERS" -ge 14 ]]; then
   # Copies files into the Services directory.
   cp -r ../scripts/iCloud\ No\ Sync.workflow "${APPLE_SERVICES}"
