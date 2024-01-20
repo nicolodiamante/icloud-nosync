@@ -33,7 +33,7 @@ The installation process for this utility is designed for ease and convenience. 
 **Automatic Installation via `curl`**: Simply execute the following command in your terminal to quickly download and seamlessly install the utility:
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/HEAD/bootstrap.sh)"
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosync/HEAD/bootstrap.zsh)"
 ```
 
 **Manual Installation**: If you favor manual installation, first clone the repository to your local machine using `git`:
@@ -42,10 +42,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nosy
 git clone https://github.com/nicolodiamante/icloud-nosync.git
 ```
 
-After cloning, navigate to the repository's directory in your terminal. From there, move to the `utils` subdirectory and execute the `install.sh` script:
+After cloning, navigate to the repository's directory in your terminal and execute the `install.sh` script:
 
 ```shell
-source install.sh
+source utils/install.sh
 ```
 
 This script will copy the workflow files to `~/Library/Services`.
@@ -94,9 +94,9 @@ Any suggestions or feedback you may have for improvement are welcome. If you enc
 </p>
 
 <p align="center">
-  <picture>
-    <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/aa3768d1-9434-4a15-9d01-1b0c984ccb0f" draggable="false" ondragstart="return false;" alt="Nicol&#242; Diamante" title="Nicol&#242; Diamante" width="17px" />
-  </picture>
+  <a href="https://nicolodiamante.com" target="_blank">
+    <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/aa3768d1-9434-4a15-9d01-1b0c984ccb0f" draggable="false" ondragstart="return false;" alt="Nicol&#242; Diamante Portfolio" title="Nicol&#242; Diamante" width="17px" />
+  </a>
 </p>
 
 <p align="center">

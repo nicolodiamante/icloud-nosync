@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-&#169; 2023 Nicolò Diamante <hello@nicolodiamante.com>
+&#169; 2024 Nicolò Diamante <hello@nicolodiamante.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

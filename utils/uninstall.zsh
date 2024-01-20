@@ -10,11 +10,17 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
   exit 1
 fi
 
-# Removes the files inside the Services directory.
+echo "\niCloud NoSync: Starting the removal process..."
+
+# Defines the Services directory and the workflow files.
 APPLE_SERVICES="${HOME}/Library/Services"
 NO_SYNC=iCloud\ No\ Sync.workflow
 SYNC=iCloud\ Sync.workflow
 
+# Removes workflow files inside the Services directory.
 for file in "${APPLE_SERVICES}"/{"$NO_SYNC","$SYNC"}; do
   [[ -r "$file" ]] && rm -rf "${file}"
-done && echo 'The workflow files have been removed!'
+done
+
+# Prints a success message.
+echo "iCloud NoSync: The workflow files have been removed."
