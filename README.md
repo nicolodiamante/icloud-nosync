@@ -42,10 +42,10 @@ zsh -c "$(curl -fsSL https://raw.githubusercontent.com/nicolodiamante/icloud-nos
 git clone https://github.com/nicolodiamante/icloud-nosync.git
 ```
 
-After cloning, navigate to the repository's directory in your terminal and execute the `install.sh` script:
+After cloning, navigate to the repository's directory in your terminal and execute the install script:
 
 ```shell
-source utils/install.sh
+source utils/install.zsh
 ```
 
 This script will copy the workflow files to `~/Library/Services`.
