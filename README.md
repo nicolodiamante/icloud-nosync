@@ -54,16 +54,21 @@ The script will copy the workflow files to `~/Library/Services` and then open th
 
 ### Show in Quick Action Menu
 
-Once in Privacy & Security, enter Finder and check the boxes:
+Once the script opens the Privacy & Security panel, select Finder and check the boxes:
 
-- [x] iCloud No Sync
-- [x] iCloud Sync
+<br><br>
+
+<p align="center">
+  <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/5a70657b-9fbf-40b2-b0f2-ade24e2c9b6c" draggable="false" ondragstart="return false;" alt="Selected Quick Actions" title="Selected Quick Actions" width="600px" />
+</p>
+
+<br><br>
 
 After doing this, you should be able to right-click on files or folders in Finder and find the `iCloud No Sync` and `iCloud Sync` options in the Quick Action section of the context menu.
 
 <br>
 
-### How It Works
+## How It Works
 
 1. Right-click on the file or folder you want to stop syncing to iCloud Drive.
 2. Select `iCloud No Sync` from the `Quick Actions` menu to stop the sync.
