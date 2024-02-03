@@ -48,16 +48,20 @@ After cloning, navigate to the repository's directory in your terminal and execu
 source utils/install.zsh
 ```
 
-This script will copy the workflow files to `~/Library/Services`.
+The script will copy the workflow files to `~/Library/Services` and then open the Privacy & Security panel.
 
 <br>
 
 ### Show in Quick Action Menu
 
-Open System Preferences <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/1905590e-328d-4f7b-9501-2371681a648a" draggable="false" ondragstart="return false;" alt="Arrow" title="Arrow" width="5.4px" /> Extensions <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/1905590e-328d-4f7b-9501-2371681a648a" draggable="false" ondragstart="return false;" alt="Arrow" title="Arrow" width="5.4px" /> Select Finder then check the box:
+Once in Privacy & Security, enter Finder and check the boxes:
 
 - [x] iCloud No Sync
 - [x] iCloud Sync
+
+After doing this, you should be able to right-click on files or folders in Finder and find the `iCloud No Sync` and `iCloud Sync` options in the Quick Action section of the context menu.
+
+<br>
 
 ### How It Works
 
