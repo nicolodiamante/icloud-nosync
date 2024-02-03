@@ -59,7 +59,9 @@ Once the script opens the Privacy & Security panel, select Finder and check the 
 <br><br>
 
 <p align="center">
-  <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/5a70657b-9fbf-40b2-b0f2-ade24e2c9b6c" draggable="false" ondragstart="return false;" alt="Selected Quick Actions" title="Selected Quick Actions" width="600px" />
+  <picture>
+    <img src="https://github.com/nicolodiamante/icloud-nosync/assets/48920263/5a70657b-9fbf-40b2-b0f2-ade24e2c9b6c" draggable="false" ondragstart="return false;" alt="Selected Quick Actions" title="Selected Quick Actions" width="600px" />
+  </picture>
 </p>
 
 <br><br>
